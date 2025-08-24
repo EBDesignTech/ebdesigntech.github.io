@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<div style="text-align: right; margin-bottom: 1.5em;">
-    <a href="index.html" style="
-        display: inline-block;
-        background: #ffda79;
-        color: #222;
-        padding: 0.5em 1.2em;
-        border-radius: 24px;
-        font-weight: bold;
-        text-decoration: none;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        transition: background 0.2s;
-    " onmouseover="this.style.background='#ffe082'" onmouseout="this.style.background='#ffda79'">
-        🏠 Home
-    </a>
-</div>
     <meta charset="UTF-8">
     <title>About Me | EB Design&Tech</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #222;
+            background: #fff;
             margin: 0;
             padding: 0;
-            color: #fff;
+            color: #222;
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
-            background: #222;
+            background: #fff;
             padding: 32px;
             border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.20);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
         h1, h2 {
-            color: #fafafa;
+            color: #3c3c3c;
         }
         .section {
             margin-bottom: 2em;
         }
         .highlight {
             font-weight: bold;
-            color: #ffda79;
+            color: #1976d2;
         }
         a {
-            color: #90caf9;
+            color: #1976d2;
             text-decoration: underline;
         }
         a:hover {
-            color: #fff176;
+            color: #1565c0;
         }
         .contact-info span {
             display: block;
@@ -65,7 +50,7 @@
         }
         .motto {
             font-style: italic;
-            color: #ffda79;
+            color: #1976d2;
             font-size: 1.2em;
             margin-bottom: 2em;
         }
@@ -77,12 +62,30 @@
             margin-bottom: 1em;
             box-shadow: 0 2px 6px rgba(0,0,0,0.07);
         }
+        .home-widget {
+            text-align: right;
+            margin-bottom: 1.5em;
+        }
+        .home-widget a {
+            display: inline-block;
+            background: #1976d2;
+            color: #fff;
+            padding: 0.5em 1.2em;
+            border-radius: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: background 0.2s;
+        }
+        .home-widget a:hover {
+            background: #1565c0;
+        }
         footer {
             text-align: center;
             margin-top: 32px;
             font-size: 0.95em;
-            color: #bbb;
-            background: #111;
+            color: #666;
+            background: #f5f5f5;
             padding: 16px 0 8px 0;
             border-radius: 0 0 12px 12px;
         }
@@ -95,11 +98,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="home-widget">
+            <a href="index.html">🏠 Home</a>
+        </div>
         <div class="section">
             <h1>👩‍💻 About Me</h1>
-            <!-- You can add your profile image here if you wish:
-            <img src="your-photo.jpg" alt="Elizabeth" class="profile-image">
-            -->
             <p>
                 I am <strong>Erzsébet Börcsök</strong>, just call me <strong>Elizabeth</strong>.
             </p>
