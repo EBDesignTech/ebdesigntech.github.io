@@ -1,0 +1,146 @@
+/* Erzsébet Börcsök – Research Engineer Portfolio CSS */
+
+:root {
+    --primary-color: #174A7C;
+    --accent-color: #E67E22;
+    --background-light: #F8F8F8;
+    --text-dark: #222;
+    --section-bg: #FFFFFF;
+    --border-radius: 10px;
+    --font-main: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background: var(--background-light);
+    color: var(--text-dark);
+    font-family: var(--font-main);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto 20px auto;
+    padding: 24px;
+    background: var(--section-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 24px rgba(23, 74, 124, 0.05), 0 1.5px 6px rgba(23, 74, 124, 0.05);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-top: 1.4em;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.3em;
+}
+
+.section {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list, .projects-list, .contact-list {
+    margin-top: 0.6em;
+}
+
+.skills-list li, .projects-list li, .contact-list li {
+    padding: 0.4em 0;
+    margin-left: 1em;
+    position: relative;
+}
+
+.skills-list li:before, .projects-list li:before, .contact-list li:before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: -1em;
+    font-size: 1.1em;
+}
+
+.highlight {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-weight: 600;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+}
+
+.contact-info a, .contact-info span {
+    font-size: 1em;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-bottom: 0.5em;
+    transition: background 0.2s;
+}
+
+.contact-info a:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+footer {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 2em 0 1em 0;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
